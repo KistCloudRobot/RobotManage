@@ -1,0 +1,84 @@
+//
+// plugins-rtl.scss
+//
+
+// rdw-editor
+
+.rdw-dropdown-carettoclose,
+.rdw-dropdown-carettoopen {
+    right: auto;
+    left: 10%;
+}
+
+// form wizard
+
+.wizard {
+    .steps {
+        .number {
+            margin-right: 0;
+            margin-left: .5rem;
+        }
+    }
+}
+
+// date-picker
+
+.mx-icon-calendar {
+    left: 10px !important;
+    right: auto !important;
+}
+
+
+// range-slider
+
+.vue-slide-bar-separate {
+    direction: ltr;
+}
+
+// editor
+
+.ck.ck-toolbar>.ck-toolbar__items {
+    flex-direction: row-reverse !important;
+}
+
+.ck.ck-editor__editable_inline {
+    text-align: right !important;
+}
+
+.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel_ne,
+.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel_se {
+    right: 0;
+    left: auto !important;
+}
+
+
+// Select 2
+
+.select2-container {
+    .select2-selection--single {
+        .select2-selection__rendered {
+            padding-right: 12px;
+        }
+
+        .select2-selection__arrow {
+            left: 3px;
+            right: auto;
+        }
+    }
+
+    .select2-selection--multiple {
+        .select2-selection__choice {
+            float: right;
+            margin-left: 5px;
+            margin-right: 0;
+        }
+    }
+
+    .select2-search__field {
+        text-align: right;
+    }
+
+    .select2-search--inline {
+        float: right;
+    }
+}

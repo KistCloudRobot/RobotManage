@@ -1,0 +1,19 @@
+/*
+Template Name: Samply - Admin & Dashboard Template
+Author: Pichforest
+Version: 1.0.0
+Website: https://Pichforest.com/
+Contact: support@Pichforest.com
+File: Dark Layout Css File
+*/
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+@import "src/assets/scss/custom/dark-layout/structure";
+@import "src/assets/scss/custom/dark-layout/components";
+@import "src/assets/scss/custom/dark-layout/plugins";
+@import "src/assets/scss/custom/dark-layout/pages";

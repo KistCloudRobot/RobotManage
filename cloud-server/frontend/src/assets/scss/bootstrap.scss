@@ -1,0 +1,27 @@
+/*
+Template Name: Samply - Admin & Dashboard Template
+Author: Pichforest
+Version: 1.0.0
+Website: https://Pichforest.com/
+Contact: Pichforest@gmail.com
+File: Custom Bootstrap Css File
+*/
+
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables";
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+@import "src/assets/scss/custom/components/reboot";
+@import "src/assets/scss/custom/components/backgrounds";
+@import "src/assets/scss/custom/components/badge";
+@import "src/assets/scss/custom/components/buttons";
+@import "src/assets/scss/custom/components/breadcrumb";
+@import "src/assets/scss/custom/components/card";
+@import "src/assets/scss/custom/components/dropdown";
+@import "src/assets/scss/custom/components/nav";
+@import "src/assets/scss/custom/components/table";
+@import "src/assets/scss/custom/components/pagination";
+@import "src/assets/scss/custom/components/progress";

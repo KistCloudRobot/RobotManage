@@ -1,0 +1,178 @@
+{
+  "navbar": {
+    "search": {
+      "text": "Buscar..."
+    },
+    "dropdown": {
+      "notification": {
+        "text": "Notificaciones",
+        "subtext": "Ver todo",
+        "order": {
+          "title": "Se realiza tu pedido",
+          "text": "Si varios idiomas fusionan la gramática",
+          "time": "Hace 3 minutos"
+        },
+        "james": {
+          "title": "James Lemire",
+          "text": "Parecerá un inglés simplificado.",
+          "time": "Hace 1 hora"
+        },
+        "item": {
+          "title": "Tu artículo es enviado",
+          "text": "Si varios idiomas fusionan la gramática",
+          "time": "Hace 3 minutos"
+        },
+        "salena": {
+          "title": "Salena Layfield",
+          "text": "As a skeptical Cambridge friend of mine occidental.",
+          "time": "Hace 1 hora"
+        },
+        "button": "Ver más.."
+      },
+      "profile": {
+        "text": "Peter",
+        "list": {
+          "welcome": "Welcome Peter!",
+          "profile": "Profile",
+          "messages": "Messages",
+          "taskboard": "Taskboard",
+          "help": "Help",
+          "balance": {
+            "text": "Balance",
+            "amount": "$1901.67"
+          },
+          "settings": {
+            "text": "Settings",
+            "badge": "New"
+          },
+          "lockscreen": "Lock screen",
+          "logout": "Logout"
+        }
+      }
+    }
+  },
+  "menuitems": {
+    "menu": {
+      "text": "Menú"
+    },
+    "dashboard": {
+      "text": "Tablero"
+    },
+    "more": {
+      "text": "Más"
+    },
+    "apps": {
+      "text": "Aplicaciones",
+      "calendar": {
+        "text": "Calendario"
+      },
+      "chat": {
+        "text": "Chat"
+      },
+      "email": {
+        "text": "Correo electrónico",
+        "list": {
+          "inbox": "Bandeja de entrada",
+          "reademail": "Leer el correo electrónico"
+        }
+      }
+    },
+    "pages": {
+      "text": "Paginas"
+    },
+    "authentication": {
+      "text": "Autenticación",
+      "list": {
+        "login": "Acceso",
+        "register": "Registrarse",
+        "recoverpwd": "Recuperar contraseña",
+        "lockscreen": "Bloquear pantalla",
+        "verification": "Verificacion de email",
+        "verification-step": "Verificación de dos pasos",
+        "confirm-mail": "Confirmar correo"
+      }
+    },
+    "utility": {
+      "text": "Utilidad",
+      "list": {
+        "starter": "Página de inicio",
+        "profile": "Perfil",
+        "invoice": "Factura",
+        "maintenance": "Mantenimiento",
+        "comingsoon": "Próximamente, en breve, pronto",
+        "timeline": "Cronología",
+        "faqs": "Preguntas frecuentes",
+        "pricing": "Precios",
+        "error404": "error 404",
+        "error500": "error 500"
+      }
+    },
+    "adminkit": {
+      "text": "Kit de administración"
+    },
+    "components": {
+      "text": "Componentes"
+    },
+    "uielements": {
+      "text": "Elementos de la interfaz de usuario"
+    },
+    "advancedkit": {
+      "text": "Kit avanzado",
+      "list": {
+        "sweetalert": "Alerta dulce",
+        "rangeslider": "Control deslizante de rango",
+        "notifications": "Notificaciones",
+        "carousel": "Carrusel"
+      }
+    },
+    "typography": {
+      "text": "Tipografía"
+    },
+    "forms": {
+      "text": "Formularios",
+      "badge": "2",
+      "list": {
+        "elements": "Elementos de formulario",
+        "advanced": "Formulario avanzado"
+      }
+    },
+    "tables": {
+      "text": "Mesas",
+      "list": {
+        "bootstrap": "Tablas de Bootstrap",
+        "advanced": "Tabla avanzada"
+      }
+    },
+    "extras": {
+      "text": "Páginas extra"
+    },
+    "charts": {
+      "text": "Gráficos"
+    },
+    "icons": {
+      "text": "Iconos",
+      "list": {
+        "boxicons": "Boxicons",
+        "materialdesign": "Diseño de materiales",
+        "dripicons": "Dripicons",
+        "fontawesome": "Fuente impresionante"
+      }
+    },
+    "maps": {
+      "text": "Mapas"
+    },
+    "multilevel": {
+      "text": "Multi nivel",
+      "list": {
+        "level1": {
+          "1": "Nivel 1.1",
+          "2": "Nivel 1.2",
+          "level2": {
+            "1": "Nivel 2.1",
+            "2": "Nivel 2.2"
+          }
+        }
+      }
+    }
+  }
+}

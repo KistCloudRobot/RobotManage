@@ -1,0 +1,178 @@
+{
+    "navbar": {
+      "search": {
+        "text": "Ricerca..."
+      },
+      "dropdown": {
+        "notification": {
+          "text": "Notifiche",
+          "subtext": "Mostra tutto",
+          "order": {
+            "title": "Il tuo ordine è stato effettuato",
+            "text": "Se più lingue fondono la grammatica",
+            "time": "3 minuti fa"
+          },
+          "james": {
+            "title": "James Lemire",
+            "text": "Sembrerà un inglese semplificato.",
+            "time": "1 ora fa"
+          },
+          "item": {
+            "title": "Il tuo articolo viene spedito",
+            "text": "Se più lingue fondono la grammatica",
+            "time": "3 minuti fa"
+          },
+          "salena": {
+            "title": "Salena Layfield",
+            "text": "Come un mio scettico amico di Cambridge occidentale.",
+            "time": "1 ora fa"
+          },
+          "button": "Visualizza altro.."
+        },
+        "profile": {
+          "text": "Peter",
+          "list": {
+            "welcome": "Welcome Peter!",
+            "profile": "Profilo",
+            "messages": "Messaggi",
+            "taskboard": "Taskboard",
+            "help": "Aiuto",
+            "balance": {
+              "text": "Equilibrio",
+              "amount": "$1901.67"
+            },
+            "settings": {
+              "text": "impostazioni",
+              "badge": "Nuova"
+            },
+            "lockscreen": "Blocca schermo",
+            "logout": "Disconnettersi"
+          }
+        }
+      }
+    },
+    "menuitems": {
+      "menu": {
+        "text": "Menù"
+      },
+      "dashboard": {
+        "text": "Pannello di controllo"
+      },
+      "more": {
+        "text": "Di più"
+      },
+      "apps": {
+        "text": "App",
+        "calendar": {
+          "text": "Calendario"
+        },
+        "chat": {
+          "text": "Chiacchierare"
+        },
+        "email": {
+          "text": "E-mail",
+          "list": {
+            "inbox": "Posta in arrivo",
+            "reademail": "Leggere l'e-mail"
+          }
+        }
+      },
+      "pages": {
+        "text": "Pages"
+      },
+      "authentication": {
+        "text": "Autenticazione",
+        "list": {
+          "login": "Login",
+          "register": "Registrati",
+          "recoverpwd": "Recupera la password",
+          "lockscreen": "Blocca schermo",
+          "verification": "Verifica email",
+          "verification-step": "Verifica in due passaggi",
+          "confirm-mail": "Conferma posta"
+        }
+      },
+      "utility": {
+        "text": "Utilità",
+        "list": {
+          "starter": "Pagina iniziale",
+          "profile": "Profilo",
+          "invoice": "Fattura",
+          "maintenance": "Manutenzione",
+          "comingsoon": "Prossimamente",
+          "timeline": "Sequenza temporale",
+          "faqs": "Domande frequenti",
+          "pricing": "Prezzi",
+          "error404": "Errore 404",
+          "error500": "Errore 500"
+        }
+      },
+      "adminkit": {
+        "text": "Kit di amministrazione"
+      },
+      "components": {
+        "text": "Componenti"
+      },
+      "uielements": {
+        "text": "Elementi dell'interfaccia utente"
+      },
+      "advancedkit": {
+        "text": "Kit avanzato",
+        "list": {
+          "sweetalert": "Sweet-Alert",
+          "rangeslider": "Range Slider",
+          "notifications": "Notifiche",
+          "carousel": "Giostra"
+        }
+      },
+      "typography": {
+        "text": "Tipografia"
+      },
+      "forms": {
+        "text": "Forme",
+        "badge": "2",
+        "list": {
+          "elements": "Elementi del modulo",
+          "advanced": "Modulo avanzato"
+        }
+      },
+      "tables": {
+        "text": "Tabelle",
+        "list": {
+          "bootstrap": "Tabelle Bootstrap",
+          "advanced": "Tabella avanzata"
+        }
+      },
+      "extras": {
+        "text": "Pagine extra"
+      },
+      "charts": {
+        "text": "Grafici"
+      },
+      "icons": {
+        "text": "Icone",
+        "list": {
+          "boxicons": "Boxicons",
+          "materialdesign": "Material Design",
+          "dripicons": "Dripicons",
+          "fontawesome": "Carattere fantastico 5"
+        }
+      },
+      "maps": {
+        "text": "Mappe"
+      },
+      "multilevel": {
+        "text": "Multi livello",
+        "list": {
+          "level1": {
+            "1": "Livello 1.1",
+            "2": "Livello 1.2",
+            "level2": {
+              "1": "Livello 2.1",
+              "2": "Livello 2.2"
+            }
+          }
+        }
+      }
+    }
+  }

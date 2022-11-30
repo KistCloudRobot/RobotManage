@@ -1,0 +1,178 @@
+{
+    "navbar": {
+      "search": {
+        "text": "Suche..."
+      },
+      "dropdown": {
+        "notification": {
+          "text": "Benachrichtigungen",
+          "subtext": "Alle ansehen",
+          "order": {
+            "title": "Ihre Bestellung wird aufgegeben",
+            "text": "Wenn mehrere Sprachen die Grammatik verschmelzen",
+            "time": "Vor 3 min"
+          },
+          "james": {
+            "title": "James Lemire",
+            "text": "Es wird wie vereinfachtes Englisch erscheinen.",
+            "time": "Vor 1 Stunde"
+          },
+          "item": {
+            "title": "Ihr Artikel wird versendet",
+            "text": "Wenn mehrere Sprachen die Grammatik verschmelzen",
+            "time": "Vor 3 min"
+          },
+          "salena": {
+            "title": "Salena Layfield",
+            "text": "Als skeptischer Cambridge-Freund von mir Occidental.",
+            "time": "Vor 1 Stunde"
+          },
+          "button": "Mehr sehen.."
+        },
+        "profile": {
+          "text": "Peter",
+          "list": {
+            "welcome": "Herzlich willkommen Peter!",
+            "profile": "Profil",
+            "messages": "Mitteilungen",
+            "taskboard": "Taskboard",
+            "help": "Hilfe",
+            "balance": {
+              "text": "Balance",
+              "amount": "$1901.67"
+            },
+            "settings": {
+              "text": "die Einstellungen",
+              "badge": "Neu"
+            },
+            "lockscreen": "Bildschirm sperren",
+            "logout": "Ausloggen"
+          }
+        }
+      }
+    },
+    "menuitems": {
+      "menu": {
+        "text": "Speisekarte"
+      },
+      "dashboard": {
+        "text": "Instrumententafel"
+      },
+      "more": {
+        "text": "Mehr"
+      },
+      "apps": {
+        "text": "Apps",
+        "calendar": {
+          "text": "Kalender"
+        },
+        "chat": {
+          "text": "Plaudern"
+        },
+        "email": {
+          "text": "Email",
+          "list": {
+            "inbox": "Posteingang",
+            "reademail": "E-Mail lesen"
+          }
+        }
+      },
+      "pages": {
+        "text": "Seiten"
+      },
+      "authentication": {
+        "text": "Authentifizierung",
+        "list": {
+          "login": "Anmeldung",
+          "register": "Registrieren",
+          "recoverpwd": "Passwort wiederherstellen",
+          "lockscreen": "Bildschirm sperren",
+          "verification": "E-Mail-Verifizierung",
+          "verification-step": "Überprüfung in zwei Schritten",
+          "confirm-mail": "Mail bestätigen"
+        }
+      },
+      "utility": {
+        "text": "Nützlichkeit",
+        "list": {
+          "starter": "Startseite",
+          "profile": "Profil",
+          "invoice": "Rechnung",
+          "maintenance": "Instandhaltung",
+          "comingsoon": "Kommt bald",
+          "timeline": "Zeitleiste",
+          "faqs": "FAQs",
+          "pricing": "Preisgestaltung",
+          "error404": "Fehler 404",
+          "error500": "Fehler 500"
+        }
+      },
+      "adminkit": {
+        "text": "Admin Kit"
+      },
+      "components": {
+        "text": "Komponenten"
+      },
+      "uielements": {
+        "text": "UI-Elemente"
+      },
+      "advancedkit": {
+        "text": "Advanced Kit",
+        "list": {
+          "sweetalert": "Sweet-Alert",
+          "rangeslider": "Range Slider",
+          "notifications": "Benachrichtigungen",
+          "carousel": "Karussell"
+        }
+      },
+      "typography": {
+        "text": "Typografie"
+      },
+      "forms": {
+        "text": "Formen",
+        "badge": "2",
+        "list": {
+          "elements": "Formularelemente",
+          "advanced": "Formular Erweitert"
+        }
+      },
+      "tables": {
+        "text": "Tabellen",
+        "list": {
+          "bootstrap": "Bootstrap-Tabellen",
+          "advanced": "Erweiterte Tabelle"
+        }
+      },
+      "extras": {
+        "text": "Zusätzliche Seiten"
+      },
+      "charts": {
+        "text": "Diagramme"
+      },
+      "icons": {
+        "text": "Symbole",
+        "list": {
+          "boxicons": "Boxicons",
+          "materialdesign": "Material Design",
+          "dripicons": "Dripicons",
+          "fontawesome": "Font Awesome 5"
+        }
+      },
+      "maps": {
+        "text": "Karten"
+      },
+      "multilevel": {
+        "text": "Multi Level",
+        "list": {
+          "level1": {
+            "1": "Level 1.1",
+            "2": "Level 1.2",
+            "level2": {
+              "1": "Level 2.1",
+              "2": "Level 2.2"
+            }
+          }
+        }
+      }
+    }
+  }

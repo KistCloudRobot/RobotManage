@@ -1,0 +1,37 @@
+// 
+// Extras pages.scss
+//
+
+
+// pricing
+
+.pricing-nav-tabs{
+    display: inline-block;
+    background-color: $white;
+    box-shadow: $box-shadow-sm;
+    padding: 4px;
+    border-radius: 7px;
+    li{
+        display: inline-block;
+    }
+}
+
+
+.plan-box{
+    .plan-features{
+        li{
+            padding: 7px 0px;
+        }
+    }
+}
+
+// blog
+
+.blog-play-icon{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0px auto;
+}

@@ -1,0 +1,37 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "../components/BAvatar/avatar";
+@import "../components/BButton/button";
+@import "../components/BCard/card";
+@import "../components/BFormTags/form-tags";
+@import "../components/BInputGroup/input-group";
+@import "../components/BPagination/pagination";
+@import "../components/BSkeleton/skeleton";
+@import "../components/BTransition/transition";
+@import "../components/BTable/table";
+@import "../components/BToast/index";
+
+.input-group
+  > .form-floating:not(:first-child)
+  > :not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: 0px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group:not(.has-validation)
+  > .form-floating:not(:last-child)
+  > :not(.dropdown-toggle):not(.dropdown-menu) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.dropdown-toggle.dropdown-toggle-no-caret:before,
+.dropdown-toggle.dropdown-toggle-no-caret:after {
+  display: none !important;
+}
+// No focus outline helper (use sparingly)
+.bv-no-focus-ring:focus {
+  outline: none;
+}

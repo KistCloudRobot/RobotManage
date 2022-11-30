@@ -1,0 +1,178 @@
+{
+  "navbar": {
+    "search": {
+      "text": "Search..."
+    },
+    "dropdown": {
+      "notification": {
+        "text": "Notifications",
+        "subtext": "View All",
+        "order": {
+          "title": "Your order is placed",
+          "text": "If several languages coalesce the grammar",
+          "time": "3 min ago"
+        },
+        "james": {
+          "title": "James Lemire",
+          "text": "It will seem like simplified English.",
+          "time": "1 hours ago"
+        },
+        "item": {
+          "title": "Your item is shipped",
+          "text": "If several languages coalesce the grammar",
+          "time": "3 min ago"
+        },
+        "salena": {
+          "title": "Salena Layfield",
+          "text": "As a skeptical Cambridge friend of mine occidental.",
+          "time": "1 hours ago"
+        },
+        "button": "View More.."
+      },
+      "profile": {
+        "text": "Peter",
+        "list": {
+          "welcome": "Welcome Peter!",
+          "profile": "Profile",
+          "messages": "Messages",
+          "taskboard": "Taskboard",
+          "help": "Help",
+          "balance": {
+            "text": "Balance",
+            "amount": "$1901.67"
+          },
+          "settings": {
+            "text": "Settings",
+            "badge": "New"
+          },
+          "lockscreen": "Lock screen",
+          "logout": "Logout"
+        }
+      }
+    }
+  },
+  "menuitems": {
+    "menu": {
+      "text": "Menu"
+    },
+    "dashboard": {
+      "text": "Dashboard"
+    },
+    "more": {
+      "text": "More"
+    },
+    "apps": {
+      "text": "Apps",
+      "calendar": {
+        "text": "Calendar"
+      },
+      "chat": {
+        "text": "Chat"
+      },
+      "email": {
+        "text": "Email",
+        "list": {
+          "inbox": "Inbox",
+          "reademail": "Read Email"
+        }
+      }
+    },
+    "pages": {
+      "text": "Pages"
+    },
+    "authentication": {
+      "text": "Authentication",
+      "list": {
+        "login": "Login",
+        "register": "Register",
+        "recoverpwd": "Recover Password",
+        "lockscreen": "Lock Screen",
+        "verification": "Email Verification",
+        "verification-step": "Two Step Verification",
+        "confirm-mail": "Confirm Mail"
+      }
+    },
+    "utility": {
+      "text": "Utility",
+      "list": {
+        "starter": "Starter Page",
+        "profile": "Profile",
+        "invoice": "Invoice",
+        "maintenance": "Maintenance",
+        "comingsoon": "Coming Soon",
+        "timeline": "Timeline",
+        "faqs": "FAQs",
+        "pricing": "Pricing",
+        "error404": "Error 404",
+        "error500": "Error 500"
+      }
+    },
+    "adminkit": {
+      "text": "Admin Kit"
+    },
+    "components": {
+      "text": "Components"
+    },
+    "uielements": {
+      "text": "UI Elements"
+    },
+    "advancedkit": {
+      "text": "Advanced Kit",
+      "list": {
+        "sweetalert": "Sweet-Alert",
+        "rangeslider": "Range Slider",
+        "notifications": "Notifications",
+        "carousel": "Carousel"
+      }
+    },
+    "typography": {
+      "text": "Typography"
+    },
+    "forms": {
+      "text": "Forms",
+      "badge": "2",
+      "list": {
+        "elements": "Form Elements",
+        "advanced": "Form Advanced"
+      }
+    },
+    "tables": {
+      "text": "Tables",
+      "list": {
+        "bootstrap": "Bootstrap Tables",
+        "advanced": "Data Table"
+      }
+    },
+    "extras": {
+      "text": "Extra pages"
+    },
+    "charts": {
+      "text": "Charts"
+    },
+    "icons": {
+      "text": "Icons",
+      "list": {
+        "boxicons": "Boxicons",
+        "materialdesign": "Material Design",
+        "dripicons": "Dripicons",
+        "fontawesome": "Font Awesome 5"
+      }
+    },
+    "maps": {
+      "text": "Maps"
+    },
+    "multilevel": {
+      "text": "Multi Level",
+      "list": {
+        "level1": {
+          "1": "Level 1.1",
+          "2": "Level 1.2",
+          "level2": {
+            "1": "Level 2.1",
+            "2": "Level 2.2"
+          }
+        }
+      }
+    }
+  }
+}

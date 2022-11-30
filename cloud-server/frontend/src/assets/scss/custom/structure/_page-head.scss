@@ -1,0 +1,30 @@
+// 
+// Page-title
+// 
+
+.page-title-box {
+    padding: 7px $grid-gutter-width;
+    background-color: $card-bg;
+    border-bottom: 1px solid $card-border-color;
+    margin: -19px (-$grid-gutter-width) $grid-gutter-width (-$grid-gutter-width);
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 16px!important;
+    }
+}
+
+body[data-layout="horizontal"] {
+    .page-title-box {
+        padding: $grid-gutter-width 0;
+        background-color: transparent !important;
+        border-bottom: none;
+        margin: -19px 0 0 0;
+    }
+}

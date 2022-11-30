@@ -1,0 +1,37 @@
+// 
+// _buttons.scss
+// 
+
+button,a {
+  outline: none !important;
+}
+
+
+// Rounded Buttons
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn-dark, .btn-secondary{
+  color: $gray-200 !important;
+}
+
+.btn-outline-light{
+  color: $gray-900;
+}
+
+.btn-outline-dark, .btn-dark{
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle,
+  &:hover{
+    color: $light;
+  }
+}
+
+// Button Border
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    border-bottom: 1.5px solid darken($value, 7.5%);
+  }
+}

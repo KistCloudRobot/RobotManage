@@ -1,0 +1,250 @@
+// 
+// pages-rtl.scss
+//
+
+// calendar
+
+#external-events {
+    .external-event{
+        text-align: right;
+    }
+}
+
+// chat
+
+.chat-list {
+    li{
+        .user-img{
+            .user-status{
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+}
+
+.chat-conversation{
+    .conversation-list{
+        
+        .ctext-wrap-content{
+            margin-left: 0px;
+            margin-right: 10px;
+            border-radius: 8px 0px 8px 8px;
+            &::before{
+                border-right-color: transparent;
+                border-left-color: rgba($primary, 0.1);
+                left: auto;
+                right: -10px;
+            }
+        }
+    }
+
+    .right{
+        .conversation-list{
+            float: left;
+            text-align: left;
+            .ctext-wrap{
+                .ctext-wrap-content{
+                    margin-right: 0px;
+                    margin-left: 10px;
+                    border-radius: 0px 8px 8px 8px;
+                    text-align: left;
+
+                    &::before{
+                    border-left-color: transparent;
+                    border-right-color: $light;
+                    right: auto;
+                    left: -10px;
+                }
+                }
+            }
+        }
+    }
+}
+
+
+// email
+
+.email-leftbar{
+    float: right;
+}
+
+.email-rightbar {
+    margin-right: 245px;
+    margin-left: 0px;
+}
+
+.message-list {
+    li {
+        .col-mail{
+            float: right;
+        }
+        .col-mail-1{
+            .star-toggle, .checkbox-wrapper-mail, .dot{
+                float: right
+            }
+            .checkbox-wrapper-mail {
+                margin: 15px 20px 0 10px;
+            }
+            .star-toggle {
+                margin-right: 5px;
+            }
+            
+            .title {
+                right: 90px;
+                left: 0;
+            }
+        }
+        .col-mail-2{
+            right: 260px;
+            left: 0;
+
+            .subject {
+                right: 0;
+                left: 200px;
+            }
+
+            .date {
+                left: 0;
+                right: auto;
+                padding-right: 80px;
+                padding-left: 0px;
+            }
+        
+        }
+    }
+    .checkbox-wrapper-mail {
+        label{
+            &:before{
+                right: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .email-leftbar {
+        float: none !important;
+        width: 100%;
+    }
+    .email-rightbar {
+        margin-right: 0;
+    }
+}
+
+
+
+.close{
+    right: auto !important;
+    top: 0;
+    left: 0;
+}
+  
+
+.modal-open{
+      padding-right: 0px !important;
+}
+
+
+// timeline
+
+.timeline {
+    &:before {
+        left: auto;
+        right: 0;
+    }
+    .timeline-box{
+        margin-left: 0;
+        margin-right: 45px;
+    }
+
+    .timeline-icon{
+        left: auto;
+        right: -50px;
+        &::before{
+            left: auto;
+            right: 12px;
+        }
+    }
+
+    .timeline-date{
+        padding: 4px 0px 4px 12px;
+        border-radius: 0px 0px 4px 4px;
+        left: auto;
+        right: -20px;
+        .circle-dot{
+            margin-right: 0;
+            margin-left: 8px;
+        }
+
+        &::before{
+            border-right-color: transparent;
+            border-left-color: $primary;
+            left: auto;
+            right: -30px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .timeline{
+
+        &:before {
+            left: auto;
+            right: 50%;
+        }
+        .time-show-btn{
+            left: auto;
+            right: 67px;
+            text-align: left;
+        }
+    }
+
+    .timeline-item{
+
+        &.timeline-left{
+            text-align: left;
+        }
+
+        &.timeline-left{
+            .timeline-box{
+                margin-left: 45px;
+                margin-right: 0;
+            }
+
+            .timeline-date {
+                padding: 4px 12px 4px 0px;
+                border-radius: 4px 4px 0px 0px;
+                left: -20px;
+                right: auto;
+            
+                .circle-dot{
+                    float: left;
+                    margin-right: 8px;
+                    margin-left: 0px;
+                }
+
+                &::before{
+                    left: -30px;
+                    right: auto;
+                    border-left-color: transparent;
+                    border-right-color: $primary;
+                }
+            }
+
+            .timeline-icon{
+                left: -53px;
+                right: auto;
+                &::before{
+                    left: 12px;
+                    right: auto;
+                }
+            }
+
+        }
+    }
+}
+
+.custom-control-input {
+    margin-left: 5px;
+}

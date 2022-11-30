@@ -1,0 +1,51 @@
+//
+// Form editors.scss
+//
+
+// ck-editor
+.ck.ck-toolbar {
+    background-color: $gray-200 !important;
+    border: 1px solid $input-border-color !important;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+    border-color: $input-border-color !important;
+    box-shadow: none;
+}
+
+.ck.ck-dropdown__panel,
+.ck.ck-list {
+    background: $gray-200;
+    border: 1px solid $input-border-color;
+}
+
+.ck-editor__editable {
+    min-height: 245px !important;
+}
+
+.ck.ck-toolbar.ck-toolbar_grouping>.ck-toolbar__items {
+    flex-wrap: wrap !important;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+    background-color: $card-bg;
+}
+
+.ck.ck-reset_all,
+.ck.ck-reset_all * {
+    color: $gray-600
+}
+
+.ck.ck-toolbar .ck.ck-toolbar__separator,
+.mce-container {
+    background: transparent;
+}
+
+.ck.ck-button.ck-on,
+.ck-button,
+a.ck.ck-button.ck-on,
+.ck.ck-button:not(.ck-disabled):hover,
+a.ck.ck-button:not(.ck-disabled):hover {
+    background: $gray-600;
+}
+

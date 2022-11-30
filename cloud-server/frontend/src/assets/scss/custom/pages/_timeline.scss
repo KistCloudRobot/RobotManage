@@ -1,0 +1,174 @@
+// 
+// timeline.scss
+//
+/************** vertical timeline **************/ 
+
+.timeline{
+    position: relative;
+    margin-bottom: 30px;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        top: 30px;
+        left: 0;
+        bottom: 0;
+        background-color: darken($gray-300,2%);
+    }
+
+    .timeline-item{
+        display: flex;
+    }
+
+    .timeline-block{
+        width: 100%;
+    }
+
+    .time-show-btn{
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .timeline-box{
+        margin: 20px 0;
+        position: relative;
+        margin-left: 45px;
+    }
+
+    .timeline-date{
+        display: inline-block;
+        padding: 4px 12px 4px 0px;
+        border-radius: 0px 4px 4px 0px;
+        background-color: $primary;
+        color: $white;
+        position: relative;
+        left: -20px;
+        
+        .circle-dot{
+            margin-right: 8px;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            border: 15px solid transparent;
+            border-right-color: $primary;
+            left: -30px;
+            top: 0;
+        }
+    }
+
+    .timeline-icon {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: $primary;
+        border-radius: 50%;
+        display: block;
+        border: 3px solid $body-bg;
+        left: -50px;
+        text-align: center;
+        top: 27px;
+        z-index: 9;
+        &:before {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 20px;
+            background-color: darken($gray-300,2%);
+            left: 12px;
+            top: 3px;
+        }
+    }
+
+    .timeline-album {
+        margin-top: 16px;
+        a {
+            display: inline-block;
+            margin-right: 5px;
+        }
+        img {
+            height: 40px;
+            width: auto;
+            border-radius: 4px;
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .timeline{
+
+        .timeline-block{
+            width: 50%;
+        }
+
+        &:before {
+            left: 50%;
+        }
+        .time-show-btn{
+            position: relative;
+            left: 67px;
+            text-align: right;
+        }
+    }
+
+    .timeline-item{
+        &::before {
+            content: "";
+            display: block;
+            width: 50%;
+        }
+
+        &.timeline-left{
+            text-align: right;
+            &::after {
+                content: "";
+                display: block;
+                width: 50%;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &.timeline-left{
+            .timeline-box{
+                margin-left: 0;
+                margin-right: 45px;
+            }
+
+            .timeline-date {
+                padding: 4px 0px 4px 12px;
+                border-radius: 4px 0px 0px 4px;
+                left: auto;
+                right: -20px;
+            
+                .circle-dot{
+                    float: right;
+                    margin-right: 0px;
+                    margin-left: 8px;
+                }
+
+                &::before{
+                    left: auto;
+                    right: -30px;
+                    border-right-color: transparent;
+                    border-left-color: $primary;
+                }
+            }
+
+            .timeline-icon{
+                left: auto;
+                right: -53px;
+                &::before{
+                    left: auto;
+                    right: 12px;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+// modal 
+
+.modal-backdrop {
+    opacity: .5;
+}
+
+.modal-header,
+.alert {
+    .close {
+        padding: 0.3rem 1.75rem;
+        background: transparent;
+        border: 0;
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: .4;
+        width: 1em;
+        height: 1em;
+        z-index: 2;
+
+        button {
+            display: none;
+        }
+    }
+}

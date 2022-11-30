@@ -1,0 +1,37 @@
+// 
+// authentication.scss
+//
+
+
+// authentication home icon
+.home-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+.auth-logo{
+    .auth-logo-light{
+        display: $display-none;
+    }
+
+    .auth-logo-dark{
+        display: $display-block;
+    }
+
+    .auth-logo-light, .auth-logo-dark{
+        margin: 0px auto;
+    }
+}
+
+.bg-auth{
+    position: relative;
+    background-image: url("../images/bg-auth.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .bg-overlay{
+        opacity: 0.6;
+        background-color: $primary;
+    }
+}

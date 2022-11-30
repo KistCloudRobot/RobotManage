@@ -1,0 +1,132 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap-vue-3": "^0.2.8",
+    "core-js": "^3.8.3",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^19.0.0",
+    "@ckeditor/ckeditor5-vue": "^1.0.1",
+    "@fullcalendar/bootstrap": "^5.6.0",
+    "@fullcalendar/daygrid": "^5.6.0",
+    "@fullcalendar/interaction": "^5.6.0",
+    "@fullcalendar/list": "^5.6.0",
+    "@fullcalendar/timegrid": "^5.6.0",
+    "@fullcalendar/vue": "^5.6.0",
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "apexcharts": "^3.26.1",
+    "axios": "^0.27.2",
+    "babel-jest": "^27.0.6",
+    "bootstrap": "^5.2.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "flatpickr": "^4.6.13",
+    "jest": "^27.0.5",
+    "metismenujs": "^1.2.1",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.32.11",
+    "sass-loader": "^10.1.1",
+    "simplebar-vue": "^1.6.2",
+    "sweetalert2": "^10.16.6",
+    "ts-jest": "^27.0.4",
+    "typescript": "~4.5.5",
+    "v-click-outside": "^3.1.2",
+    "vue": "^2.6.11",
+    "vue-apexcharts": "^1.6.1",
+    "vue-count-to": "^1.0.13",
+    "vue-form-wizard": "^0.8.4",
+    "vue-flatpickr-component": "^9.0.6",
+    "vue-i18n": "^9.2.2",
+    "vue-meta": "^2.4.0",
+    "vue-multiselect": "^2.1.6",
+    "vue-number-input-spinner": "^2.2.0",
+    "vue-router": "^3.2.0",
+    "vue-slide-bar": "^1.2.0",
+    "vue-sweetalert2": "^4.3.1",
+    "vue-switches": "^2.0.1",
+    "vue-verification-code-input": "^1.0.0",
+    "vue2-datepicker": "^3.9.0",
+    "vue2-dropzone": "^3.6.0",
+    "vue2-google-maps": "^0.10.7",
+    "vuelidate": "^0.7.6",
+    "vuex": "^4.0.2"
+  },
+  "eslintConfig": {
+    "root": false,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "@vue/typescript/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "vue/multi-word-component-names": "off",
+      "@typescript-eslint/no-var-requires": 0,
+      "@typescript-eslint/ban-ts-comment": "off",
+      "vue/no-deprecated-slot-attribute": "off",
+      "vue/no-deprecated-slot-scope-attribute": "off",
+      "@typescript-eslint/no-this-alias": [
+        "error",
+        {
+          "allowDestructuring": true,
+          "allowedNames": [
+            "vm",
+            "g_loginHandler",
+            "that"
+          ]
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest/presets/typescript-and-babel"
+  }
+}

@@ -1,0 +1,157 @@
+/*
+Template Name: Samply - Admin & Dashboard Template
+Author: Pichforest
+Version: 1.0.0
+Website: https://Pichforest.com/
+Contact: support@Pichforest.com
+File: Main Css File
+*/
+
+//Fonts
+@import "src/assets/scss/custom/fonts/fonts";
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "src/assets/scss/bootstrap";
+
+@import "icons";
+
+@import "src/assets/scss/custom/dark-layout/structure";
+@import "src/assets/scss/custom/dark-layout/components";
+@import "src/assets/scss/custom/dark-layout/plugins";
+@import "src/assets/scss/custom/dark-layout/pages";
+
+// Structure
+@import "src/assets/scss/custom/structure/general";
+@import "src/assets/scss/custom/structure/topbar";
+@import "src/assets/scss/custom/structure/page-head";
+@import "src/assets/scss/custom/structure/footer";
+@import "src/assets/scss/custom/structure/right-sidebar";
+@import "src/assets/scss/custom/structure/vertical";
+@import "src/assets/scss/custom/structure/horizontal-nav";
+@import "src/assets/scss/custom/structure/layouts";
+
+// Components
+@import "src/assets/scss/custom/components/waves";
+@import "src/assets/scss/custom/components/avatar";
+@import "src/assets/scss/custom/components/accordion";
+@import "src/assets/scss/custom/components/helper";
+@import "src/assets/scss/custom/components/preloader";
+@import "src/assets/scss/custom/components/forms";
+@import "src/assets/scss/custom/components/widgets";
+@import "src/assets/scss/custom/components/demos";
+@import "src/assets/scss/custom/components/print";
+@import "src/assets/scss/custom/components/custom";
+
+// Plugins
+@import "src/assets/scss/custom/plugins/custom-scrollbar";
+@import "src/assets/scss/custom/plugins/calendar";
+@import "src/assets/scss/custom/plugins/range-slider";
+@import "src/assets/scss/custom/plugins/sweatalert2";
+@import "src/assets/scss/custom/plugins/select2";
+@import "src/assets/scss/custom/plugins/switch";
+@import "src/assets/scss/custom/plugins/colorpicker";
+@import "src/assets/scss/custom/plugins/datepicker";
+@import "src/assets/scss/custom/plugins/bootstrap-touchspin";
+@import "src/assets/scss/custom/plugins/form-editors";
+@import "src/assets/scss/custom/plugins/form-upload";
+@import "src/assets/scss/custom/plugins/form-wizard";
+@import "src/assets/scss/custom/plugins/datatable";
+@import "src/assets/scss/custom/plugins/apexcharts";
+@import "src/assets/scss/custom/plugins/google-map";
+@import "src/assets/scss/custom/plugins/vector-maps";
+
+
+// Pages
+@import "src/assets/scss/custom/pages/authentication";
+@import "src/assets/scss/custom/pages/email";
+@import "src/assets/scss/custom/pages/chat";
+@import "src/assets/scss/custom/pages/coming-soon";
+@import "src/assets/scss/custom/pages/timeline";
+@import "src/assets/scss/custom/pages/extras-pages";
+
+
+// rtl
+// @import "custom/rtl/bootstrap-rtl";
+// @import "custom/rtl/components-rtl";
+// @import "custom/rtl/float-rtl";
+// @import "custom/rtl/general-rtl";
+// @import "custom/rtl/pages-rtl";
+// @import "custom/rtl/plugins-rtl";
+// @import "custom/rtl/spacing-rtl";
+// @import "custom/rtl/structure-rtl";
+// @import "custom/rtl/text-rtl";
+
+
+// custom scss
+
+body[data-layout-mode="dark"] {
+  background-color: #f8f8f8;
+
+  .form-control.mdk-input-control {
+    background-color: #ffffff;
+  }
+
+  .card, .modal-content {
+    background-color: #ffffff;
+    border-color: #bdbdbd;
+  }
+
+  .page-item.disabled .page-link {
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    color: #000;
+  }
+  .page-item .page-link {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    color: #000;
+  }
+  .page-item.active .page-link {
+    background-color: #0576b9;
+    border: 1px solid #eee;
+    color: #fff;
+  }
+}
+
+tr[data-selected="true"] {
+  background-color: #d0edff;
+}
+
+#mdk-table {
+  thead {
+    border-top: 2px solid #0576b9;
+  }
+  tbody tr:last-child {
+    border-bottom: 2px solid #0576b9;
+  }
+}
+
+input[type="file"]{
+  -webkit-appearance: none;
+  text-align: left;
+  -webkit-rtl-ordering: left;
+}
+input[type="file"]::-webkit-file-upload-button{
+  -webkit-appearance: none;
+  float: right;
+  margin-right: -11.5px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d2d0d0), to(#f0f0f0));
+  background-image: -moz-linear-gradient(90deg, #d2d0d0 0%, #f0f0f0 100%);
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'NanumSquareRound';
+}
+
+

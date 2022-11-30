@@ -1,0 +1,149 @@
+// 
+// _demos.scss
+// 
+
+// Demo Only
+.button-items {
+    margin-left: -8px;
+    margin-bottom: -12px;
+
+    .btn {
+        margin-bottom: 12px;
+        margin-left: 8px;
+    }
+}
+
+// Modals
+.bs-example-modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    display: block;
+}
+
+[dir="rtl"] {
+    .modal-open {
+        padding-left: 0px !important;
+    }
+}
+
+// Icon demo ( Demo only )
+.icon-demo-content {
+    color: $gray-500;
+
+    i {
+        font-size: 24px;
+        margin-right: 10px;
+        color: $gray-600;
+        transition: all 0.4s;
+        vertical-align: middle;
+    }
+
+    .col-lg-4 {
+        margin-top: 24px;
+
+        &:hover {
+            i {
+                color: $primary;
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+
+// Grid
+
+.grid-structure {
+    .grid-container {
+        background-color: $gray-100;
+        margin-top: 10px;
+        font-size: .8rem;
+        font-weight: $font-weight-medium;
+        padding: 10px 20px;
+    }
+}
+
+
+// card radio
+
+.card-radio {
+    background-color: $card-bg;
+    border: 2px solid $card-border-color;
+    border-radius: $border-radius;
+    padding: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.card-radio-label {
+    display: block;
+}
+
+
+.card-radio-input {
+    display: none;
+
+    &:checked+.card-radio {
+        border-color: $primary !important;
+    }
+}
+
+.navs-carousel {
+    .owl-nav {
+        margin-top: 16px;
+
+        button {
+            width: 30px;
+            height: 30px;
+            line-height: 28px !important;
+            font-size: 20px !important;
+            border-radius: 50% !important;
+            background-color: rgba($primary, 0.25) !important;
+            color: $primary !important;
+            margin: 4px 8px !important;
+        }
+    }
+}
+
+// UI Elements - demo
+
+.ui-elements-demo-bar {
+    padding: 24px;
+    background-color: $card-bg;
+    position: sticky;
+    overflow-y: auto;
+    top: $header-height + $grid-gutter-width;
+    height: calc(100vh - 165px);
+    margin-left: $grid-gutter-width;
+
+    @media (min-width: 1200px) {
+        min-width: 270px;
+    }
+
+    .nav-item {
+        .nav-link {
+            color: $text-muted;
+            font-weight: $font-weight-normal;
+
+            &.active {
+                background-color: transparent;
+                color: $gray-700
+            }
+        }
+    }
+}
+
+body[data-layout="horizontal"] {
+    .ui-elements-demo-bar {
+        top: 60px + $header-height + $grid-gutter-width;
+    }
+}

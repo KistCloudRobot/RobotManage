@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "search": {
+      "text": "Search..."
+    },
+    "dropdown": {
+      "notification": {
+        "text": "Notifications",
+        "subtext": "View All",
+        "order": {
+          "title": "Your order is placed",
+          "text": "If several languages coalesce the grammar",
+          "time": "3 min ago"
+        },
+        "james": {
+          "title": "James Lemire",
+          "text": "It will seem like simplified English.",
+          "time": "1 hours ago"
+        },
+        "item": {
+          "title": "Your item is shipped",
+          "text": "If several languages coalesce the grammar",
+          "time": "3 min ago"
+        },
+        "salena": {
+          "title": "Salena Layfield",
+          "text": "As a skeptical Cambridge friend of mine occidental.",
+          "time": "1 hours ago"
+        },
+        "button": "View More.."
+      },
+      "profile": {
+        "text": "Peter",
+        "list": {
+          "welcome": "Welcome Peter!",
+          "profile": "Profile",
+          "messages": "Messages",
+          "taskboard": "Taskboard",
+          "help": "Help",
+          "balance": {
+            "text": "Balance",
+            "amount": "$1901.67"
+          },
+          "settings": {
+            "text": "Settings",
+            "badge": "New"
+          },
+          "lockscreen": "Lock screen",
+          "logout": "Logout",
+          "login": "Login"
+        }
+      }
+    }
+  },
+  "menuitems": {
+    "menu": {
+      "text": "Menu"
+    },
+    "main" : {
+      "text": "마이 페이지"
+    },
+    "admin" : {
+      "text": "관리자 - 사용자 관리"
+    },
+    "manage": {
+      "text": "배포파일 관리",
+      "container": "컨테이너",
+      "files": "환경파일",
+      "dispatcher" : "디스패처",
+      "identification": "로봇 식별정보"
+    }
+  }
+}
