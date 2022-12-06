@@ -1,6 +1,9 @@
 package net.ion.mdk.auth.model;
 
-public enum  AuthProvider {
+/**
+ * Enum AuthProvider
+ */
+public enum AuthProvider {
     local,
     facebook,
     google,

@@ -1,5 +1,8 @@
 package net.ion.mdk.auth.payload;
 
+/**
+ * API 호출에 대한 응답 클래스
+ */
 public class ApiResponse {
     private boolean success;
     private String message;

@@ -11,6 +11,9 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * MDK - Account Model
+ */
 @Entity
 @Table(name = "account", uniqueConstraints = {
         @UniqueConstraint(columnNames = "email")
