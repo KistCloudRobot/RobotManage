@@ -5,6 +5,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  * Created by rajeevkumarsingh on 02/08/17.
+ * Sign Up 요청 데이터 정의 클래스
  */
 
 public class SignUpRequest {
