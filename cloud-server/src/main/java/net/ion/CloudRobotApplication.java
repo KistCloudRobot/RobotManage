@@ -25,7 +25,7 @@ public class CloudRobotApplication {
 	@PostConstruct
 	public void started() {
 		TimeZone.setDefault(timeZone);
-		System.out.println("서비스 시작: v 2021-12-22 at" + ZonedDateTime.now());
+		System.out.println("서비스 시작: v 2022-11-11 at" + ZonedDateTime.now());
 	}
 
 	public static void main(String[] args) {
