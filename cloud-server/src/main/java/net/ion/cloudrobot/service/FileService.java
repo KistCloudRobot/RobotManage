@@ -17,6 +17,9 @@ import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
+/**
+ * File Service
+ */
 @Service
 public class FileService {
     private final FileRepository repository;
@@ -28,6 +31,11 @@ public class FileService {
         this.utils = utils;
     }
 
+    /**
+     * @param file
+     * @return
+     * @throws IOException
+     */
     public Long newFile(RoOTSFile file) throws IOException {
         // aws s3 upload
         String link = utils.uploadFile("file", file.getFile());
@@ -36,6 +44,12 @@ public class FileService {
         return repository.save(file.toEntity(file.getFile().getOriginalFilename(), link)).getFileId();
     }
 
+    /**
+     * @param fId
+     * @return
+     * @throws IOException
+     * @throws URISyntaxException
+     */
     public ResponseEntity<?> downloadFile(Long fId) throws IOException, URISyntaxException {
         Optional<File> file = repository.findById(fId);
         InputStreamResource s3File = utils.download(file.get().getLink());
