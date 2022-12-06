@@ -25,6 +25,9 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import javax.validation.Valid;
 import java.net.URI;
 
+/**
+ * Auth Controller
+ */
 @Profile({"oauth", "production"})
 @RestController
 @RequestMapping("/auth")

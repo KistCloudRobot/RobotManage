@@ -10,6 +10,9 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * User Controller
+ */
 /* @zee OAuth 샘플. 2022.04.25 현재 사용되지 않음. */
 @RestController
 public class UserController {
@@ -17,6 +20,10 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+    /**
+     * @param userPrincipal
+     * @return Account
+     */
     @GetMapping("/auth/user/me")
     @PreAuthorize("hasRole('USER')")
     public Account getCurrentUser(@CurrentUser UserPrincipal userPrincipal) {
