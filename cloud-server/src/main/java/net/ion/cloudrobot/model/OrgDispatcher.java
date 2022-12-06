@@ -12,6 +12,9 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.List;
 
+/**
+ * Org Dispatcher JPA Model
+ */
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @Data

@@ -19,6 +19,9 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Robot JPA Model
+ */
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @Data

@@ -10,6 +10,9 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.sql.Timestamp;
 
+/**
+ * RobotStatus JPA Model
+ */
 @Entity
 @Data
 public class RobotStatus {
