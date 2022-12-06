@@ -20,6 +20,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 외부 제공용 Rest Api
+ */
 @org.springframework.web.bind.annotation.RestController
 @RequestMapping("/rest")
 public class RestController {
@@ -63,6 +66,12 @@ public class RestController {
         return new ResponseEntity<>(body, HttpStatus.OK);
     }
 
+    /**
+     * 다운로드 URL 제공 Api
+     * @param dispatcherKey
+     * @param request
+     * @return
+     */
     @GetMapping("/download/url")
     public ResponseEntity<Object> downloadUrl(@RequestParam(value = "key", required = true) String dispatcherKey, HttpServletRequest request) {
 
@@ -94,6 +103,11 @@ public class RestController {
     }
 
 
+    /**
+     * Sort 처리
+     * @param columns
+     * @return
+     */
     private Sort buildSort(String columns[]) {
         if (columns == null || columns.length == 0) return null;
 

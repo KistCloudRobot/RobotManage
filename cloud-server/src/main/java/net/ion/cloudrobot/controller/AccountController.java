@@ -5,6 +5,9 @@ import net.ion.mdk.jql.JQLController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Account Api
+ */
 @RestController
 @RequestMapping("/api/account")
 public class AccountController extends JQLController<Account, Long> {

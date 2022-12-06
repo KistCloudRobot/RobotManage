@@ -7,6 +7,9 @@ import net.ion.mdk.jql.JQLRepository;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Dispatcher Api
+ */
 @RestController
 @RequestMapping("/api/dispatcher")
 public class DispatcherController extends JQLController<OrgDispatcher, String> {
