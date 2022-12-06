@@ -21,6 +21,9 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Optional;
 
+/**
+ * AWS S3 Utils
+ */
 @Service
 @RequiredArgsConstructor
 public class AwsS3Utils {
