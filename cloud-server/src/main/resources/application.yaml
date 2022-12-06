@@ -1,0 +1,69 @@
+logging:
+  level:
+    sql: DEBUG
+    jdbc: DEBUG
+    jdbc.sqlonly: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql: DEBUG
+    org:
+      springframework:
+        web:
+          filter:
+            CommonsRequestLoggingFilter: debug
+        security: DEBUG
+
+  pattern:
+    console: "%-5level %d{yyyy-MM-dd HH:mm:ss}[%thread] [%F - %M] [%logger{0}:%line] - %msg%n"
+    file: "%-5level %d{yyyy-MM-dd HH:mm:ss}[%thread] [%F - %M] [%logger{0}:%line] - %msg%n"
+
+management.security.enabled: false
+security.basic.enabled: false
+
+server:
+  url: http://localhost:6090
+  port: 6090
+  contextPath: "/"
+  compression:
+    enabled: true # 응답 결과 압축 허용.
+    min-response-size: 2048
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain,application/javascript
+
+#Server Encoding
+spring:
+  main.banner-mode: off
+  session:
+    store-type: none  # Session 저장 유형 StoreType 참조.
+    timeout: 3600     # Session timeout.
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+      # open-in-view: true(=default) 인 경우, 모든 Controller API 가 자동적으로 Transaction 을 생성한다.
+      #               단, API 실행에 긴 시간이 걸리는 경우, 그 시간만큼 DB Connection 을 유지하는 단점이 있다.
+      #               일반적인 상황에서는 true를 사용한다.
+      # open-in-view: false 로 변경하면, 명시적인 @Transactional 설정이 필요하다.
+    open-in-view: true
+    hibernate:
+      ddl-auto: none
+      temp.use_jdbc_metadata_defaults: false
+      jdbc.lab.non_contextual_creation: true
+    properties:
+      hibernate:
+        format_sql: true
+        # Hibernate cache 설정.
+#        cache:
+#          use_second_level_cache: true
+#          use_query_cache: true
+#          region.factory_class: jcache
+
+app:
+  cors:
+    allowedOrigins: http://localhost:6090,http://localhost:8080,https://metadata.i-on.net
+  oauth2:
+    # After successfully authenticating with the OAuth2 Provider,
+    # we'll be generating an auth token for the user and sending the token to the
+    # redirectUri mentioned by the client in the /oauth2/authorize request.
+    # We're not using cookies because they won't work well in mobile clients.
+    authorizedRedirectUris:
+      - http://localhost:8080/oauth2/redirect
+      - http://metadata.i-on.net:/oauth2/redirect
