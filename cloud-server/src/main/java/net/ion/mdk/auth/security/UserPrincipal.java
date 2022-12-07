@@ -38,6 +38,11 @@ public class UserPrincipal implements OAuth2User, UserDetails {
         );
     }
 
+    /**
+     * @param account
+     * @param attributes
+     * @return UserPrincipal
+     */
     public static UserPrincipal create(Account account, Map<String, Object> attributes) {
         UserPrincipal userPrincipal = UserPrincipal.create(account);
         userPrincipal.setAttributes(attributes);
