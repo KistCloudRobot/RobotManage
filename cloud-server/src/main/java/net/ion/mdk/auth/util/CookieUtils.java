@@ -61,6 +61,10 @@ public class CookieUtils {
         }
     }
 
+    /**
+     * @param object
+     * @return String
+     */
     public static String serialize(Object object) {
         return Base64.getUrlEncoder()
                 .encodeToString(SerializationUtils.serialize(object));
