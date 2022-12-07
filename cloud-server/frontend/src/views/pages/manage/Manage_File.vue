@@ -29,14 +29,6 @@
 
       </MDKTable>
       <br/>
-<!--      <MDKForm-->
-<!--          :fields="formFields"-->
-<!--          :entity="selectedItem"-->
-<!--          :label-type="'table'"-->
-<!--          :read-only="true"-->
-<!--      >-->
-
-<!--      </MDKForm>-->
     </b-card>
     <b-modal v-model="modalShow" hide-header-close ok-title="저장" cancel-title="취소" @ok="onSave">
 <!--      {{newFileInfo}}-->
