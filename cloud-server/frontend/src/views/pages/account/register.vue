@@ -4,20 +4,6 @@
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="text-center mb-5">
-<!--            <router-link to="/" class="auth-logo">-->
-<!--              <img-->
-<!--                  src="@/assets/images/logo-dark.png"-->
-<!--                  alt=""-->
-<!--                  height="28"-->
-<!--                  class="auth-logo-dark"-->
-<!--              />-->
-<!--              <img-->
-<!--                  src="@/assets/images/logo-light.png"-->
-<!--                  alt=""-->
-<!--                  height="28"-->
-<!--                  class="auth-logo-light"-->
-<!--              />-->
-<!--            </router-link>-->
             <p class="font-size-24 text-muted mt-3">
               <b>로봇 작업계획 관리 시스템</b>
             </p>
@@ -166,10 +152,6 @@
                 Login
               </router-link>
             </p>
-<!--            <p>-->
-<!--              © {{ new Date().getFullYear() }} <b>Samply</b>. Crafted with-->
-<!--              <i class="mdi mdi-heart text-danger"></i> by Pichforest-->
-<!--            </p>-->
           </div>
         </div>
         <!-- end col -->
@@ -250,51 +232,6 @@ export default {
           })
     }
 
-    // Try to register the user in with the email, username
-    // and password they provided.
-    // Sample SignUp
-    /*tryToRegisterIn() {
-      this.submitted = true;
-      // stop here if form is invalid
-      this.$v.$touch();
-
-      if (this.$v.$invalid) {
-        return;
-      } else {
-        if (process.env.VUE_APP_DEFAULT_AUTH === "firebase") {
-          this.tryingToRegister = true;
-          // Reset the regError if it existed.
-          this.regError = null;
-          return (
-              this.register({
-                email: this.user.email,
-                password: this.user.password,
-              })
-                  // eslint-disable-next-line no-unused-vars
-                  .then((token) => {
-                    this.tryingToRegister = false;
-                    this.isRegisterError = false;
-                    this.registerSuccess = true;
-                    if (this.registerSuccess) {
-                      this.$router.push(
-                          this.$route.query.redirectFrom || { name: "home" }
-                      );
-                    }
-                  })
-                  .catch((error) => {
-                    this.tryingToRegister = false;
-                    this.regError = error ? error : "";
-                    this.isRegisterError = true;
-                  })
-          );
-        } else if (process.env.VUE_APP_DEFAULT_AUTH === "fakebackend") {
-          const { email, username, password } = this.user;
-          if (email && username && password) {
-            this.registeruser(this.user);
-          }
-        }
-      }
-    },*/
   },
 };
 </script>
