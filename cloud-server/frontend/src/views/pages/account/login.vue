@@ -4,10 +4,6 @@
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="text-center mb-5">
-<!--            <router-link to="/" class="auth-logo">-->
-<!--              <img src="@/assets/images/logo-dark.png" alt="" height="28" class="auth-logo-dark" />-->
-<!--              <img src="@/assets/images/logo-light.png" alt="" height="28" class="auth-logo-light" />-->
-<!--            </router-link>-->
             <p class="font-size-24 text-muted mt-3">
               <b>로봇 작업계획 관리 시스템</b>
             </p>
@@ -46,10 +42,6 @@
 
                       <div class="row align-items-center">
                         <div class="col-6">
-                          <!--<div class="form-check">
-                            <input type="checkbox" class="form-check-input font-size-16" id="remember-check" />
-                            <label class="form-check-label" for="remember-check">Remember me</label>
-                          </div>-->
                           <b-button variant="outline-primary" @click="googleLogin"><i class="bx bxl-google"></i> Google 계정 로그인</b-button>
                         </div>
                         <div class="col-6">
@@ -85,10 +77,6 @@
                 Sign up
               </router-link>
             </p>
-<!--            <p>-->
-<!--              © {{ new Date().getFullYear() }} <b>Samply</b>. Crafted with-->
-<!--              <i class="mdi mdi-heart text-danger"></i> by Pichforest-->
-<!--            </p>-->
           </div>
         </div>
         <!-- end col -->
@@ -178,49 +166,6 @@ export default {
           })
     }
 
-    // Try to log the user in with the username
-    // and password they provided.
-    // Sample Login
-    /*tryToLogIn() {
-      this.submitted = true;
-      // stop here if form is invalid
-      this.$v.$touch();
-
-      if (this.$v.$invalid) {
-        return;
-      } else {
-        if (process.env.VUE_APP_DEFAULT_AUTH === "firebase") {
-          this.tryingToLogIn = true;
-          // Reset the authError if it existed.
-          this.authError = null;
-          return (
-            this.logIn({
-              email: this.email,
-              password: this.password,
-            })
-              // eslint-disable-next-line no-unused-vars
-              .then((token) => {
-                this.tryingToLogIn = false;
-                this.isAuthError = false;
-                // Redirect to the originally requested page, or to the home page
-                this.$router.push(
-                  this.$route.query.redirectFrom || { name: "home" }
-                );
-              })
-              .catch((error) => {
-                this.tryingToLogIn = false;
-                this.authError = error ? error : "";
-                this.isAuthError = true;
-              })
-          );
-        } else if (process.env.VUE_APP_DEFAULT_AUTH === "fakebackend") {
-          const { email, password } = this;
-          if (email && password) {
-            this.login({ email, password });
-          }
-        }
-      }
-    },*/
   },
 };
 </script>
