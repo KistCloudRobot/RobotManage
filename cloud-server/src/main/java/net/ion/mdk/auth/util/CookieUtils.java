@@ -70,6 +70,12 @@ public class CookieUtils {
                 .encodeToString(SerializationUtils.serialize(object));
     }
 
+    /**
+     * @param cookie
+     * @param cls
+     * @param <T>
+     * @return <T>
+     */
     public static <T> T deserialize(Cookie cookie, Class<T> cls) {
         return cls.cast(SerializationUtils.deserialize(
                         Base64.getUrlDecoder().decode(cookie.getValue())));
