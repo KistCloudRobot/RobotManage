@@ -2,6 +2,9 @@ package net.ion.mdk.auth.security.oauth2.user;
 
 import java.util.Map;
 
+/**
+ * Github OAuth2 UserInfo
+ */
 public class GithubOAuth2UserInfo extends OAuth2UserInfo {
 
     public GithubOAuth2UserInfo(Map<String, Object> attributes) {
