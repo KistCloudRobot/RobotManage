@@ -77,6 +77,9 @@ public class AwsS3Utils {
         return s3.getUrl(bucket, fileName).toString();
     }
 
+    /**
+     * @param targetFile
+     */
     private void removeNewFile(File targetFile){
         if(targetFile.delete()){
             System.out.println("파일이 삭제되었습니다.");
@@ -85,6 +88,11 @@ public class AwsS3Utils {
         }
     }
 
+    /**
+     * @param file
+     * @return
+     * @throws IOException
+     */
     private Optional<File> convert(MultipartFile file) throws IOException {
         File convertFile = new File(System.currentTimeMillis() + StringUtils.cleanPath(file.getOriginalFilename()));
 
@@ -97,6 +105,11 @@ public class AwsS3Utils {
         return Optional.empty();
     }
 
+    /**
+     * @param link
+     * @return
+     * @throws URISyntaxException
+     */
     public InputStreamResource download(String link) throws URISyntaxException {
         URI fileLink = new URI(link);
         AmazonS3URI s3URI = new AmazonS3URI(fileLink);
