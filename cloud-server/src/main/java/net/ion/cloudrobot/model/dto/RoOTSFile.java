@@ -18,6 +18,11 @@ public class RoOTSFile {
     private String regUser;
     private String dispatcherId;
 
+    /**
+     * @param name
+     * @param link
+     * @return File
+     */
     public File toEntity(String name, String link) {
         return File.builder()
                 .name(name)
