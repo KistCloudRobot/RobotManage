@@ -24,14 +24,23 @@ public class AppProperties {
             return tokenSecret;
         }
 
+        /**
+         * @param tokenSecret
+         */
         public void setTokenSecret(String tokenSecret) {
             this.tokenSecret = tokenSecret;
         }
 
+        /**
+         * @return long tokenExpirationMsec
+         */
         public long getTokenExpirationMsec() {
             return tokenExpirationMsec;
         }
 
+        /**
+         * @param tokenExpirationMsec
+         */
         public void setTokenExpirationMsec(long tokenExpirationMsec) {
             this.tokenExpirationMsec = tokenExpirationMsec;
         }
@@ -40,6 +49,9 @@ public class AppProperties {
     public static final class OAuth2 {
         private List<String> authorizedRedirectUris = new ArrayList<>();
 
+        /**
+         * @return List<String> authorizedRedirectUris
+         */
         public List<String> getAuthorizedRedirectUris() {
             return authorizedRedirectUris;
         }
