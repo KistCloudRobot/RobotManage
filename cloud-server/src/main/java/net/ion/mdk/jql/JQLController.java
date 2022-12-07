@@ -26,6 +26,13 @@ public abstract class JQLController<ENTITY, ID> extends JQLReadOnlyController<EN
         return entity;
     }
 
+    /**
+     * 엔터티 변경
+     * @param idList
+     * @param updateSet
+     * @return
+     * @throws Exception
+     */
     @PatchMapping(path = "/{idList}")
     @ResponseBody
     @Operation(summary = "엔터티 변경")
@@ -34,6 +41,11 @@ public abstract class JQLController<ENTITY, ID> extends JQLReadOnlyController<EN
         return entities;
     }
 
+    /**
+     * 엔터티 삭제
+     * @param idList
+     * @return
+     */
     @DeleteMapping("/{idList}")
     @ResponseBody
     @Operation(summary = "엔터티 삭제")
