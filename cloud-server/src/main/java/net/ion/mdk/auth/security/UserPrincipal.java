@@ -25,6 +25,10 @@ public class UserPrincipal implements OAuth2User, UserDetails {
         this.authorities = authorities;
     }
 
+    /**
+     * @param account
+     * @return UserPrincipal
+     */
     public static UserPrincipal create(Account account) {
         return new UserPrincipal(
                 account.getId(),
