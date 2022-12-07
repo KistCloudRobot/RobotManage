@@ -36,6 +36,9 @@ public class JQLConfig {
         }
     }
 
+    /**
+     * @return Hibernate5Module
+     */
     @Bean
     public Module datatypeHibernateModule() {
         Hibernate5Module hm = new JQLModule();
