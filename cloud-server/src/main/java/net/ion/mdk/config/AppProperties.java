@@ -17,6 +17,9 @@ public class AppProperties {
         private String tokenSecret;
         private long tokenExpirationMsec;
 
+        /**
+         * @return String Token
+         */
         public String getTokenSecret() {
             return tokenSecret;
         }
