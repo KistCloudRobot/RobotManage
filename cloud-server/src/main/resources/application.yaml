@@ -50,11 +50,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        # Hibernate cache 설정.
-#        cache:
-#          use_second_level_cache: true
-#          use_query_cache: true
-#          region.factory_class: jcache
 
 app:
   cors:
