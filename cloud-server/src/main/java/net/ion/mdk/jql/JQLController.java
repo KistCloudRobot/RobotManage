@@ -12,6 +12,12 @@ public abstract class JQLController<ENTITY, ID> extends JQLReadOnlyController<EN
         super(service);
     }
 
+    /**
+     * 엔터티 추가
+     * @param entity
+     * @return
+     * @throws Exception
+     */
     @PostMapping()
     @ResponseBody
     @Operation(summary = "엔터티 추가")
