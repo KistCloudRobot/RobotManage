@@ -48,6 +48,10 @@ public class TokenProvider {
                 .compact();
     }
 
+    /**
+     * @param authorities
+     * @return
+     */
     private List<String> getRoles(Collection<? extends GrantedAuthority> authorities) {
         ArrayList<String> roles = new ArrayList<>();
         for (GrantedAuthority a : authorities) {
