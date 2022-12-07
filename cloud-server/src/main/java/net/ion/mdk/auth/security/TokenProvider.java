@@ -50,7 +50,7 @@ public class TokenProvider {
 
     /**
      * @param authorities
-     * @return
+     * @return List<String>
      */
     private List<String> getRoles(Collection<? extends GrantedAuthority> authorities) {
         ArrayList<String> roles = new ArrayList<>();
@@ -63,6 +63,10 @@ public class TokenProvider {
         return roles;
     }
 
+    /**
+     * @param token
+     * @return Long
+     */
     public Long getUserIdFromToken(String token) {
         Claims claims = Jwts.parser()
                 .setSigningKey(appProperties.getAuth().getTokenSecret())
