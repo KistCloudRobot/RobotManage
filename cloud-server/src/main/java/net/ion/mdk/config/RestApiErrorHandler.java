@@ -24,6 +24,10 @@ public class RestApiErrorHandler {
         return makeErrorResponse(e);
     }
 
+    /**
+     * @param e
+     * @return ResponseEntity<Object>
+     */
     private static ResponseEntity<Object> makeErrorResponse(Throwable e) {
         int error = HttpStatus.INTERNAL_SERVER_ERROR.value();
         if (e instanceof RestClientResponseException) {
@@ -37,6 +41,11 @@ public class RestApiErrorHandler {
                 .body(newSimpleMap("message", e.getMessage()));
     }
 
+    /**
+     * @param key
+     * @param value
+     * @return HashMap
+     */
     private static HashMap newSimpleMap(String key, Object value) {
         HashMap<String, Object> map = new HashMap<>();
         map.put(key, value);
