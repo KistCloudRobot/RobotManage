@@ -25,6 +25,9 @@ public abstract class SecuredJQLController<ENTITY extends SecuredEntity, ID> ext
         super(service);
     }
 
+    /**
+     * AuthorId 필드의 접근 권한 부여
+     */
     @PostConstruct
     void onCreate() {
         Class<ENTITY> type = super.getRepository().getEntityType();
