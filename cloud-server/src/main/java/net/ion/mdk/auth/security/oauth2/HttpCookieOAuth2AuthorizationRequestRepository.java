@@ -15,6 +15,10 @@ public class HttpCookieOAuth2AuthorizationRequestRepository implements Authoriza
     public static final String REDIRECT_URI_PARAM_COOKIE_NAME = "redirect_uri";
     private static final int cookieExpireSeconds = 180;
 
+    /**
+     * @param request
+     * @return
+     */
     @Override
     public OAuth2AuthorizationRequest loadAuthorizationRequest(HttpServletRequest request) {
         return CookieUtils.getCookie(request, OAUTH2_AUTHORIZATION_REQUEST_COOKIE_NAME)
@@ -22,6 +26,11 @@ public class HttpCookieOAuth2AuthorizationRequestRepository implements Authoriza
                 .orElse(null);
     }
 
+    /**
+     * @param authorizationRequest
+     * @param request
+     * @param response
+     */
     @Override
     public void saveAuthorizationRequest(OAuth2AuthorizationRequest authorizationRequest, HttpServletRequest request, HttpServletResponse response) {
         if (authorizationRequest == null) {
@@ -37,11 +46,19 @@ public class HttpCookieOAuth2AuthorizationRequestRepository implements Authoriza
         }
     }
 
+    /**
+     * @param request
+     * @return
+     */
     @Override
     public OAuth2AuthorizationRequest removeAuthorizationRequest(HttpServletRequest request) {
         return this.loadAuthorizationRequest(request);
     }
 
+    /**
+     * @param request
+     * @param response
+     */
     public void removeAuthorizationRequestCookies(HttpServletRequest request, HttpServletResponse response) {
         CookieUtils.deleteCookie(request, response, OAUTH2_AUTHORIZATION_REQUEST_COOKIE_NAME);
         CookieUtils.deleteCookie(request, response, REDIRECT_URI_PARAM_COOKIE_NAME);
