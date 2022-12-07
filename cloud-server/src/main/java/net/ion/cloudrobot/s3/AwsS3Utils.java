@@ -43,12 +43,23 @@ public class AwsS3Utils {
     private final AmazonS3Client s3;
 
 
+    /**
+     * @param folderName
+     * @param multipartFile
+     * @return
+     * @throws IOException
+     */
     public String uploadFile(String folderName, MultipartFile multipartFile) throws IOException {
         File uploadFile = convert(multipartFile)
                 .orElseThrow(()->new IllegalArgumentException("MultipartFile 형식을 File로 전환하는 데에 실패하였습니다."));
         return upload(uploadFile, folderName);
     }
 
+    /**
+     * @param uploadFile
+     * @param folderName
+     * @return String uploadImageUrl
+     */
     private String upload(File uploadFile, String folderName){
         String fileName = folderName + "/" + uploadFile.getName();
         String uploadImageUrl = putS3(uploadFile, fileName);
@@ -56,6 +67,11 @@ public class AwsS3Utils {
         return uploadImageUrl;
     }
 
+    /**
+     * @param uploadFile
+     * @param fileName
+     * @return String S3 file url
+     */
     private String putS3(File uploadFile, String fileName){
         s3.putObject(new PutObjectRequest(bucket, fileName, uploadFile).withCannedAcl(CannedAccessControlList.PublicRead));
         return s3.getUrl(bucket, fileName).toString();
