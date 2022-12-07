@@ -23,7 +23,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     /**
      * @param email
-     * @return
+     * @return UserDetails
      * @throws UsernameNotFoundException
      */
     @Override
@@ -38,6 +38,10 @@ public class CustomUserDetailsService implements UserDetailsService {
         return UserPrincipal.create(account);
     }
 
+    /**
+     * @param id
+     * @return UserDetails
+     */
     @Transactional
     public UserDetails loadUserById(Long id) {
         Account account = userRepository.findById(id).orElseThrow(
