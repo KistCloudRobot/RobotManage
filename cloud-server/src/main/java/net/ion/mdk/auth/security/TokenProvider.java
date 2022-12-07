@@ -26,6 +26,10 @@ public class TokenProvider {
         this.appProperties = appProperties;
     }
 
+    /**
+     * @param authentication
+     * @return String
+     */
     public String createToken(Authentication authentication) {
         UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
 
