@@ -2,6 +2,9 @@ package net.ion.mdk.auth.security.oauth2.user;
 
 import java.util.Map;
 
+/**
+ * OAuth2 UserInfo
+ */
 public abstract class OAuth2UserInfo {
     protected Map<String, Object> attributes;
 
