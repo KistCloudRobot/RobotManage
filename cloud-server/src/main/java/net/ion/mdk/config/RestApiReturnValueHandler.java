@@ -41,6 +41,10 @@ public class RestApiReturnValueHandler extends HandlerMethodReturnValueHandlerCo
         }
     }
 
+    /**
+     * @param param
+     * @return boolean
+     */
     @Override
     public boolean supportsReturnType(MethodParameter param) {
         init();
@@ -53,6 +57,13 @@ public class RestApiReturnValueHandler extends HandlerMethodReturnValueHandlerCo
         return true;
     }
 
+    /**
+     * @param o
+     * @param methodParameter
+     * @param modelAndViewContainer
+     * @param nativeWebRequest
+     * @throws Exception
+     */
     @Override
     public void handleReturnValue(Object o, MethodParameter methodParameter, ModelAndViewContainer modelAndViewContainer, NativeWebRequest nativeWebRequest) throws Exception {
         if (o instanceof Map && ((Map)o).get("content") != null) {

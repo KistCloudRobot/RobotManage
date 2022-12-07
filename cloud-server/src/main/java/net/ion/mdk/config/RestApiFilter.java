@@ -23,6 +23,13 @@ public class RestApiFilter implements Filter {
         log.info("init XSSFilter");
     }
 
+    /**
+     * @param request
+     * @param response
+     * @param chain
+     * @throws IOException
+     * @throws ServletException
+     */
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
