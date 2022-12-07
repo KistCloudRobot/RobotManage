@@ -88,6 +88,11 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         return userRepository.save(account);
     }
 
+    /**
+     * @param existingAccount
+     * @param oAuth2UserInfo
+     * @return
+     */
     private Account updateExistingUser(Account existingAccount, OAuth2UserInfo oAuth2UserInfo) {
         existingAccount.setName(oAuth2UserInfo.getName());
         existingAccount.setImageUrl(oAuth2UserInfo.getImageUrl());
